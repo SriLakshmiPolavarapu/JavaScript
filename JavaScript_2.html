@@ -1,0 +1,62 @@
+<html>
+    <head>
+        <script>
+
+            //var
+            var a = 1;
+            {
+                var a = 2;
+            }
+            var a = 3;
+            alert(a);//3
+
+            //-------------------
+            var t;
+            t = 90;
+            {
+                t = 91;
+            }
+            t = 92;
+            alert(t);//92
+
+            //-------------------
+            //let
+            let b = 1;
+            {
+                let b = 2;
+            }
+            //let b = 3; error
+            alert(b);//1
+
+            //--------------------
+            let v;
+            v = 10;
+            {
+                v = 11;
+            }
+            v = 12;
+            alert(v); //12
+
+            //---------------------
+            //const
+            const s = 5;
+            {
+                const s = 10;
+            }
+            {
+                const s = 11;
+            }
+            //const s = 7; error
+            alert(s);//5
+
+            //----------------------
+            //no output
+            const c = 100;
+            {
+                c = 81;
+            }
+            alert(c);
+
+        </script>
+    </head>
+</html>

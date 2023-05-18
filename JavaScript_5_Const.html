@@ -1,0 +1,30 @@
+<html>
+    <body>
+        <script>
+            //const array
+            const array = ["apple", "banana", "cherry"];
+
+            document.write(array);
+            document.write("<br>");
+
+            array[0] = "grapes";
+            document.write("array[0] is ", array[0]);
+            document.write("<br>");        
+
+            array.push("mango");
+            document.write("array[0] after changing is ", array[0]);
+            document.write("<br>");        
+
+            //const objects
+            const arr = {model:"audi", color:"white", cost:500};
+            document.write(arr.color); //changing the property
+            document.write("<br>");        
+
+            arr.color = "black";
+            document.write(arr.color);
+
+            arr = {model:"bmw", color:"red", cost:700}; //can NOT re-assign
+
+        </script>
+    </body>
+</html>

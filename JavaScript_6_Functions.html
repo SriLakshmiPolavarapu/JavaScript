@@ -1,0 +1,70 @@
+<html>
+    <body>
+        <p id = "demo"></p>
+        <p id = "demo1"></p>
+
+        <script>
+            function firstFun(a, b)
+            {
+                return a + b;
+            }
+
+            var res = firstFun(1, 2);
+            //document.getElementById("demo").innerHTML = res;
+
+            //---------------------------------
+
+            //var fun = secondFun(2, 2, 2);
+
+            function secondFun(x, y, z)
+            {
+                return x * y * z;     
+
+            }
+            //document.write(fun);
+            //document.getElementById("demo").innerHTML = "The result is " + secondFun(2, 2, 2); //8
+            //document.getElementById("demo").innerHTML = secondFun(); //nan
+            //document.getElementById("demo").innerHTML = secondFun; //returns function instead of function result
+
+            function thirdFun()
+            {
+                let h = "hello"; //local variable
+                //document.getElementById("demo").innerHTML = h;
+            }
+            thirdFun(); //calling function
+
+            function fourthFun()
+            {
+                let h = "world"; //local variable
+                //document.getElementById("demo1").innerHTML = h;
+            }
+            fourthFun(); //calling function
+
+
+
+            //----------------------------------------------
+            //details is a object
+            //firstName, lastName, age are values/properties
+            // object : value
+            //accessing a object using objectName.propertyName
+            const details = {
+                firstName : "Sri Lakshmi",
+                lastName : "Polavarapu",
+                age : 22
+            };
+            //document.write(details.firstName + " " + details.lastName + " is " + details.age + " years old");
+
+            //--------------------------------------------------
+            //info is object
+            //this is info object
+            const info = { name : "Sri", university : "VIT",
+           information : function(){
+                return this.name + " is studying in " + this.university;
+            }
+        };
+        document.getElementById("demo").innerHTML = info.information();
+
+
+        </script>
+    </body>
+</html>

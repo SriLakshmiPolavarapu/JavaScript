@@ -1,0 +1,69 @@
+<html>
+
+<head>
+    <p id ="demo"></p>
+
+    <script>
+        let x = window.prompt("enter a val1");
+        let y = window.prompt("enter a val2");
+        //window.promt gives a dialogue box where we can enter value
+        
+        const a = parseInt(x);
+        let b = parseInt(y);
+
+        let c = a + b;
+        alert(c);
+
+        const g = 10;
+        let h = 5;
+        let diff = g - h;
+        window.alert(diff);
+
+        //g = 11; //program doesn't get executed
+        let h1 = 8;
+        let diff1 = g - h1;
+        window.alert(diff1);
+
+        var m=8;
+        var n="hello"
+
+        let res = "9" + n;
+        alert(res);
+
+        let u=1;
+        let u1="world";
+
+        let k,l,sum;
+        k=2,l=6,sum=k+l;
+        window.alert(sum);
+
+        let text = "hello";
+        text += " " + "world";
+        alert(text);
+              
+        let result = "hello" + 2 + 3; //hello23 
+        let result1 = 2 + 3 + "hello"; //5hello
+        document.write("result is " , result);
+        document.write("<br>");
+        document.write("result1 is " , result1);
+        document.write("<br>");
+
+        var text1 = "Hello, 'SriLakshmi'";
+        var text2 = 'Hello, "SriLakshmi"';
+        document.write(text1 + "<br>" + text2);
+        document.getElementById("demo").innerHTML = text1 + "<br>" + text2 + "<br>"; //this output will be displayed first
+
+        //var text3 = "Hello, "SriLakshmi""; error
+        
+
+        let val1 = 26.00;
+        let val2 = 26;
+        document.write(val1 + "<br>" + val2);
+
+        document.getElementById("demo").innerHTML = typeof "Sri" + "<br>" + typeof 3 + "<br>" + typeof 3.5 + "<br>" + typeof "";
+
+    </script>
+
+</head>
+
+</html>
